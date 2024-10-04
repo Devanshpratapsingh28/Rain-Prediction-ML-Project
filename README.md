@@ -7,10 +7,16 @@
 3. [Git CLI](https://git-scm.com/book/en/v2/Getting-Started-The-Command-Line)
 4. [Render](https://dashboard.render.com/)
 
-Create a new environment : 
+Create a new virtual environment : 
 ```
 python -m venv rainenv
 ```
+
+Activate this virtual environment :
+```
+rainenv\Scripts\activate
+```
+
 ### File/Folder Description :
 1. `Templates` : It includes those file which is dynamically changing and used by render_template.
 2. `Static` : It includes those file which is static in nature like css,js,images.
@@ -24,6 +30,7 @@ python -m venv rainenv
 4. Seaborn
 5. Imblearn (for oversampling)
 6. Scikit Learn (Sklearn)
+7. Flask
 
 ### Data Preprocessing Steps
 1. Dropped two features i.e _mintemp_ and _maxtemp_ due to high correlation.
