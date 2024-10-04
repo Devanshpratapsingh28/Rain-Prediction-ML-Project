@@ -19,7 +19,7 @@ rainenv\Scripts\activate
 
 ### File/Folder Description :
 1. `Templates` : It includes those file which is dynamically changing and used by render_template.
-2. `Static` : It includes those file which is static in nature like css,js,images.
+2. `Static` : It includes those file which is static in nature like css, js, images.
 
 #### Dataset Source : https://www.geeksforgeeks.org/rainfall-prediction-using-machine-learning-python/
 
