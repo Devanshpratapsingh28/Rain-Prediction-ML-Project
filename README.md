@@ -1,6 +1,6 @@
 ## Rain_Prediction-ML-Project
 
-### [Deployed Link](https://rain-prediction-project-dps.onrender.com)
+### Deployed Link : https://rain-prediction-project-dps.onrender.com
 
 ### Problem Statement :
 `Based on given dataset we need to develop a model which predict weather rainfall will occur or not.`
