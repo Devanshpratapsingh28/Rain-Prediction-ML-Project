@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rainfall Prediction</title>
+    <link href="https://fonts.googleapis.com/css2?family=K2D:wght@400;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='rainpredict.css') }}" />
+</head>
+
+<body>
+    <div id="outer-container">
+        <h2 id="inner-1">Enter Details to predict rain:</h2>
+        <div id="inner-2">
+            <form action="{{ url_for('predict') }}" method="post">
+                Date:
+                <input type="number" min="1" max="31" name="day" placeholder="Enter date" required /><br /><br />
+                Pressure(in hPa):
+                <input type="number" step="0.01" name="pressure" placeholder="Enter pressure" required /><br /><br />
+                Temperature:
+                <input type="number" min="0" max="100" step="0.01" name="temperature" placeholder="Enter temperature" required /><br /><br />
+                Dewpoint:
+                <input type="number" min="0" max="100" step="0.01" name="dewpoint" placeholder="Enter dewpoint" required /><br /><br />
+                % Humidity:
+                <input type="number" min="0" max="100" name="humidity" placeholder="Enter humidity.." required /><br /><br />
+                % Cloud cover:
+                <input type="number" min="0" max="100" name="cloud" placeholder="Enter cloud cover" required /><br /><br />
+                Daylight(in hours(0-13hrs)):
+                <input type="number" min="0" max="13" step="0.01" name="sunshine" placeholder="Enter hrs. of daylight.." required /><br /><br />
+                Wind-direction(0°-360°):
+                <input type="number" min="0" max="360" name="wind_direction" placeholder="Enter wind-direction" required /><br /><br />
+                Wind-speed(in km/h):
+                <input type="number" min="0" step="0.01" name="windspeed" placeholder="Enter wind-speed" required /><br /><br />
+                <button type="submit">Predict</button>
+            </form>
+        </div>
+        <h3 id="inner-3">{{isRain}}</h3>
+    </div>
+</body>
+
+</html>
