@@ -41,3 +41,7 @@ python -m venv rainenv
 
 ### Accuracy Table 
 ![Accuracy table](model_accuracy.png)
+
+### For Home page :
+1. HTML (for form creation)
+2. CSS (for styling)
