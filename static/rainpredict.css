@@ -117,8 +117,13 @@ button {
         height: auto;
     }
 
-    #inner-1, #inner-2, #inner-3 {
+    #inner-1, #inner-3 {
         text-align: center;
-        font-size: 0.7rem;
+        font-size: 0.9rem;
+    }
+    
+    #inner-2 {
+        text-align: center;
+        font-size: 0.72rem;
     }
 }
