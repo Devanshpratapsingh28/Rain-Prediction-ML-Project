@@ -94,6 +94,10 @@ button {
         padding: 1rem;
         height: auto;
     }
+    #inner-1, #inner-2, #inner-3 {
+        text-align: center;
+        font-size: 0.8rem;
+    }
 }
 
 @media (max-width: 480px) {
@@ -115,6 +119,6 @@ button {
 
     #inner-1, #inner-2, #inner-3 {
         text-align: center;
-        font-size: 0.9rem;
+        font-size: 0.7rem;
     }
 }
